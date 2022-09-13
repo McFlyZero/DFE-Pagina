@@ -1,0 +1,110 @@
+/*===================================================
+=  ESCRITORIO (XL revisamos en 1366px en adelante)  =
+=====================================================*/
+*{
+    /*Cambiar el tipo de letra a Poppins*/
+    font-family: 'Poppins', light
+  /*font-family: 'Open Sans', sans-serif*/;
+} 
+ul,ol{
+    list-style: none;
+}
+a:visited, a:link, a:focus, a:hover, a:active{
+    list-style: none;
+    text-decoration:  none;
+}
+body{
+	background: #002B5B; 
+}
+/*=============================================
+HEADER
+=============================================*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgba(255,255,255,.5);
+}
+header .logotipo{
+    width:15%;
+}
+.redes ul li i{
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+header .redes ul li i{
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+header .buscymenu ul li i{
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+.redesMovil{
+    position: fixed;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.redes ul li i.fa-facebook-f{
+    background: #1475E0;
+}
+.redes ul li i.fa-instagram{
+    background: #EB27B0;
+}
+.redes ul li i.fa-twitter{
+    background: #00A6FF;
+}
+.redes ul li i.fa-youtube{
+    background: #FF1A1A;
+}
+.redes ul li i.fa-snapchat{
+    background: #FF9052;
+}
+.fa-envelope{
+    font-size: 28px;
+}
+
+/*=============================================
+TABLET HORIZONTAL (LG revisamos en 1024px)
+=============================================*/
+@media (max-width: 1199px) and (min-width: 992px){
+
+}
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px)
+=============================================*/
+@media (max-width: 991px) and (min-width: 768px){
+    header .logotipo{
+            width: 20%;
+        }
+    }
+/*=============================================
+MÓVIL HORIZONTAL (SM revisamos en 576px)
+=============================================*/
+@media (max-width: 767px) and (min-width: 576px){
+    header .logotipo{
+        width: 25%;
+    }
+    .fade-slider{
+        height: 30px;
+    }
+}
+/*=============================================
+MÓVIL VERTICAL (revisamos en 320px)
+=============================================*/
+@media (max-width: 575px){
+    header .logotipo{
+        width: 15%;
+    }
+    .fade-slider{
+        height: 60px;
+    }
+}
