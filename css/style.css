@@ -71,6 +71,9 @@ header .buscymenu ul li i{
 .fa-envelope{
     font-size: 28px;
 }
+.fa-search, .fa-bars{
+    color: white;
+}
 
 /*===============================
 BANNER
