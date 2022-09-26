@@ -68,7 +68,7 @@ header .buscymenu ul li i{
 .redes ul li i.fa-snapchat{
     background: #FF9052;
 }
-.fa-envelope{
+.fa-bars{
     font-size: 28px;
 }
 .fa-search, .fa-bars{
@@ -89,6 +89,87 @@ BANNER
     /*height: 200px;*/
 }
 /*=============================================
+MENU
+=============================================*/
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    overflow-x: hidden;
+    font-weight: 300;
+    display: none;
+    font-size: 34px;
+    line-height: 70px;
+}
+.btnClose{
+    position: absolute;
+    top: 100px;
+    right: 25%;
+    color: white;
+}
+.menu .nav{
+    margin-top: 10%;
+}
+/*=============================================
+GRID CATEGORIAS
+=============================================*/
+.grid figure{
+    position: relative;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+}
+
+.grid .columna1{
+    width: 40%;
+}
+
+.grid .photo1{
+    height: 400px;
+    background: url(../img/edgerunners.jpg);
+    background-size: cover;
+    background position: left;
+}
+.grid .photo2{
+    height: 300px;
+    background: url(../img/soulhackers.jpg);
+    background-size: cover;
+    background position: left;
+}
+.grid .photo3{
+    height: 300px;
+    background: url(../img/remakes.jpg);
+    background-size: cover;
+    background position: left;
+}
+.grid .photo4{
+    height: 300px;
+    background: url(../img/2023.jpg);
+    background-size: cover;
+    background position: left;
+}
+.grid .photo5{
+    height: 400px;
+    background: url(../img/mhr-mhrs.png);
+    background-size: cover;
+    background position: left;
+}
+.grid figure p{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+}
+/*=============================================
 TABLET HORIZONTAL (LG revisamos en 1024px)
 =============================================*/
 @media (max-width: 1199px) and (min-width: 992px){
@@ -100,8 +181,15 @@ TABLET VERTICAL (MD revisamos en 768px)
 @media (max-width: 991px) and (min-width: 768px){
     header .logotipo{
             width: 20%;
-        }
     }
+    .btnClose{
+        right: 15%;
+        top: 70px;
+    }
+    .menu .nav{
+        margin-top: 20%;
+    }
+}
 /*=============================================
 MÓVIL HORIZONTAL (SM revisamos en 576px)
 =============================================*/
@@ -111,6 +199,13 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
     }
     .fade-slider{
         height: 30px;
+    }
+    .btnClose{
+        left: 15%;
+        top: 50px;
+    }
+    .menu .nav{
+        margin-top: 25%;
     }
 }
 /*=============================================
@@ -122,5 +217,14 @@ MÓVIL VERTICAL (revisamos en 320px)
     }
     .fade-slider{
         height: 60px;
+    }
+    .btnClose{
+        left: 5%;
+        top: 10px;
+    }
+    .menu .nav{
+        margin-top: 25%;
+        font-size: 20px;
+        line-height: 40px;
     }
 }
