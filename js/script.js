@@ -25,10 +25,20 @@ $(window).scroll(function() {
 	if (posY > alturaBanner){
 		$("header").css({"background":"white"})
 		$("header .logotipo").css({"filter":"invert(100%)"})
-		$(".fa-envelope, .fa-magnifying-glass").css({"filter":"invert(100%)"})
+		$(".fa-bars, .fa-magnifying-glass").css({"filter":"invert(100%)"})
 	}else{
 		$("header").css({"background":"rgba(0,0,0,.5)"})
 		$("header .logotipo").css({"filter":"invert(0%)"})
-		$(".fa-envelope, .fa-magnifying-glass").css({"filter":"invert(0%)"})
+		$(".fa-bars, .fa-magnifying-glass").css({"filter":"invert(0%)"})
 	}
 });
+
+/*================================
+MENÚ
+================================*/
+$(".fa-bars").click(function(){
+	$(".menu").fadeIn("fast");
+})
+$(".btnClose").click(function(){
+	$(".menu").fadeOut("fast");
+})
