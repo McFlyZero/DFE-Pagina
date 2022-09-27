@@ -42,3 +42,13 @@ $(".fa-bars").click(function(){
 $(".btnClose").click(function(){
 	$(".menu").fadeOut("fast");
 })
+/*================================
+GRID CATEGORIAS
+================================*/
+$(".grid figure").mouseover(function(){
+	$(this).css({"background-position":"right bottom"})
+})
+
+$(".grid figure").mouseout(function(){
+	$(this).css({"background-position":"left top"})
+})
