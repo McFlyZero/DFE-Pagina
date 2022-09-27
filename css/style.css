@@ -68,11 +68,16 @@ header .buscymenu ul li i{
 .redes ul li i.fa-snapchat{
     background: #FF9052;
 }
-.fa-bars{
-    font-size: 28px;
-}
+
 .fa-search, .fa-bars{
     color: white;
+}
+.redesMovil{
+    position: fixed;
+    bottom: -10px;
+    left: 50%;
+    z-index: 10;
+    transition: translate(-50%, 0%);
 }
 
 /*===============================
@@ -159,6 +164,12 @@ GRID CATEGORIAS
     background-size: cover;
     background position: left;
 }
+.grid .photo6{
+    height: 200px;
+    background: url(../img/Vivek-thumbnail.jpg);
+    background-size: cover;
+    background-position: left;
+}
 .grid figure p{
     position: absolute;
     left: 0px;
@@ -172,15 +183,17 @@ GRID CATEGORIAS
 /*=============================================
 TABLET HORIZONTAL (LG revisamos en 1024px)
 =============================================*/
-@media (max-width: 1199px) and (min-width: 992px){
-
+@media (max-width: 1199px) and (min-width: 992px) {
+    .menu .nav {
+        margin-top: 15%;
+    }
 }
 /*=============================================
 TABLET VERTICAL (MD revisamos en 768px)
 =============================================*/
-@media (max-width: 991px) and (min-width: 768px){
-    header .logotipo{
-            width: 20%;
+@media (max-width: 991px) and (min-width: 768px) {
+    header .logotipo {
+        width: 25%;
     }
     .btnClose{
         right: 15%;
@@ -189,42 +202,130 @@ TABLET VERTICAL (MD revisamos en 768px)
     .menu .nav{
         margin-top: 20%;
     }
+
+    .grid .photo1{
+        height: 300px;
+    }
+
+    .grid .photo2{
+        height: 200px;
+    }
+
+    .grid .photo3{
+        height: 200px;
+    }
+
+    .grid .photo4{
+        height: 200px;
+    }
+
+    .grid .photo5{
+        height: 300px;
+    }
+
+    .grid figure p{
+        font-size: 18px;
+    }
 }
 /*=============================================
 MÓVIL HORIZONTAL (SM revisamos en 576px)
 =============================================*/
-@media (max-width: 767px) and (min-width: 576px){
-    header .logotipo{
-        width: 25%;
+@media (max-width: 767px) and (min-width: 576px) {
+    header .logotipo {
+        width: 15%;
     }
-    .fade-slider{
-        height: 30px;
+
+    .fade-slider {
+        height: 72px;
     }
+
     .btnClose{
         left: 15%;
         top: 50px;
     }
+
     .menu .nav{
         margin-top: 25%;
+    }
+    .grid .columna1{
+        width: 50%;
+    }
+    .grid .photo1{
+        height: 200px;
+    }
+
+    .grid .photo2{
+        height: 200px;
+    }
+
+    .grid .photo3{
+        height: 200px;
+    }
+
+    .grid .photo4{
+        height: 200px;
+    }
+
+    .grid .photo5{
+        height: 200px;
+    }
+
+    .grid figure p{
+        font-size: 16px;
     }
 }
 /*=============================================
 MÓVIL VERTICAL (revisamos en 320px)
 =============================================*/
-@media (max-width: 575px){
-    header .logotipo{
-        width: 15%;
+@media (max-width: 575px) {
+    header .logotipo {
+        width: 25%;
     }
-    .fade-slider{
-        height: 60px;
+
+    .fade-slider {
+        height: 54px;
     }
     .btnClose{
         left: 5%;
         top: 10px;
     }
+
     .menu .nav{
         margin-top: 25%;
         font-size: 20px;
         line-height: 40px;
+    }
+    .fa-bars{
+        font-size: 35px;
+        margin-right: 50px;
+    }
+    .grid .columna1{
+        width: 50%;
+    }
+    .grid .photo1{
+        height: 120px;
+    }
+
+    .grid .photo2{
+        height: 120px;
+    }
+
+    .grid .photo3{
+        height: 120px;
+    }
+
+    .grid .photo4{
+       height: 120px;
+    }
+
+    .grid .photo5{
+       height: 120px;
+    }
+    .grid .photo6{
+       height: 120px;
+    }
+
+    .grid figure p{
+        font-size: 14px;
     }
 }
