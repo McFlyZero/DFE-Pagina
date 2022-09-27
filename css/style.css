@@ -27,7 +27,7 @@ header{
     background: rgba(255,255,255,.5);
 }
 header .logotipo{
-    width:15%;
+    width:12%;
 }
 .redes ul li i{
     width: 35px;
@@ -192,6 +192,10 @@ TABLET HORIZONTAL (LG revisamos en 1024px)
     .menu .nav {
         margin-top: 15%;
     }
+    .btnClose{
+        right: 15%;
+        top: 70px;
+    }
 }
 /*=============================================
 TABLET VERTICAL (MD revisamos en 768px)
@@ -245,7 +249,7 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
     }
 
     .btnClose{
-        left: 15%;
+        right: 15%;
         top: 50px;
     }
 
@@ -291,7 +295,7 @@ MÓVIL VERTICAL (revisamos en 320px)
         height: 54px;
     }
     .btnClose{
-        left: 5%;
+        right: 5%;
         top: 10px;
     }
 
