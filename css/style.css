@@ -186,6 +186,28 @@ GRID CATEGORIAS
     font-size: 20px;
 }
 /*=============================================
+CONTENIDO
+=============================================*/
+.contenidoInicio{
+    transform: translate(0%,-2%);
+}
+.introArticulo{
+    position: relative;
+}
+.fecha{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    padding: 5px 10px;
+    /*Tengo que buscar los colores del brief y ponerlos*/
+    color: #aaa;
+    font-size: 14px;
+    background: url(../img/globo.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 40px;
+}
+/*=============================================
 TABLET HORIZONTAL (LG revisamos en 1024px)
 =============================================*/
 @media (max-width: 1199px) and (min-width: 992px) {
