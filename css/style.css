@@ -207,6 +207,14 @@ CONTENIDO
     background-position: center top;
     height: 40px;
 }
+.page-item.active .page-link{
+    background: #FF39BE;
+    color: white;
+    border: 1px solid #bbb;
+}
+.page-link{
+    color: #777;
+}
 /*=============================================
 TABLET HORIZONTAL (LG revisamos en 1024px)
 =============================================*/
