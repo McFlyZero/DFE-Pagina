@@ -132,7 +132,7 @@ GRID CATEGORIAS
     transition: 1s all;
 }
 .grid figure p:hover{
-    background: rgba(100, 57, 190, 0.7);
+    background: rgba(231, 169, 55, 0.9);
 }
 
 .grid .columna1{
@@ -200,7 +200,7 @@ CONTENIDO
     top: 0px;
     padding: 5px 10px;
     /*Tengo que buscar los colores del brief y ponerlos*/
-    color: #aaa;
+    color: #47B5FF;
     font-size: 14px;
     background: url(../img/globo.jpg);
     background-size: cover;
@@ -208,12 +208,12 @@ CONTENIDO
     height: 40px;
 }
 .page-item.active .page-link{
-    background: #FF39BE;
+    background: #47B5FF;
     color: white;
     border: 1px solid #bbb;
 }
 .page-link{
-    color: #777;
+    color: #06283D;
 }
 /*=============================================
 TABLET HORIZONTAL (LG revisamos en 1024px)
