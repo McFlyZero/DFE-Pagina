@@ -93,6 +93,9 @@ BANNER
     background: rgba(0,0,0,0);
     /*height: 200px;*/
 }
+.fade-slider {
+        height: 90px;
+}
 /*=============================================
 MENU
 =============================================*/
@@ -226,17 +229,23 @@ TABLET HORIZONTAL (LG revisamos en 1024px)
         right: 15%;
         top: 70px;
     }
+    .fade-slider {
+        height: 75px;
+    }
 }
 /*=============================================
 TABLET VERTICAL (MD revisamos en 768px)
 =============================================*/
 @media (max-width: 991px) and (min-width: 768px) {
     header .logotipo {
-        width: 25%;
+        width: 20%;
     }
     .btnClose{
         right: 15%;
         top: 70px;
+    }
+    .fade-slider {
+        height: 98px;
     }
     .menu .nav{
         margin-top: 20%;
@@ -275,7 +284,7 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
     }
 
     .fade-slider {
-        height: 72px;
+        height: 77px;
     }
 
     .btnClose{
@@ -322,7 +331,7 @@ MÓVIL VERTICAL (revisamos en 320px)
     }
 
     .fade-slider {
-        height: 54px;
+        height: 67px;
     }
     .btnClose{
         right: 5%;
@@ -335,8 +344,9 @@ MÓVIL VERTICAL (revisamos en 320px)
         line-height: 40px;
     }
     .fa-bars{
-        font-size: 35px;
-        margin-right: 50px;
+        font-size: 30px;
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
     .grid .columna1{
         width: 50%;
@@ -366,5 +376,8 @@ MÓVIL VERTICAL (revisamos en 320px)
 
     .grid figure p{
         font-size: 14px;
+    }
+    .fecha{
+        size: 10px;
     }
 }
