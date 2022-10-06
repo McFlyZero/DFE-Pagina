@@ -238,14 +238,23 @@ TABLET VERTICAL (MD revisamos en 768px)
 =============================================*/
 @media (max-width: 991px) and (min-width: 768px) {
     header .logotipo {
-        width: 20%;
+        width: 18%;
     }
+
     .btnClose{
         right: 15%;
         top: 70px;
     }
+
     .fade-slider {
-        height: 98px;
+        height: 89px;
+    }
+
+    .fa-bars{
+        font-size: 25px;
+    }
+    .fa-search{
+        font-size: 20px;
     }
     .menu .nav{
         margin-top: 20%;
@@ -290,6 +299,12 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
     .btnClose{
         right: 15%;
         top: 50px;
+    }
+
+    .fa-bars{
+        font-size: 30px;
+        margin-right: 10px;
+        margin-bottom: 12px;
     }
 
     .menu .nav{
