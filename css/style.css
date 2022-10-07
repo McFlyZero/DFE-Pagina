@@ -146,31 +146,31 @@ GRID CATEGORIAS
     height: 400px;
     background: url(../img/edgerunners.jpg);
     background-size: cover;
-    background position: left;
+    background-position: left;
 }
 .grid .photo2{
     height: 300px;
     background: url(../img/soulhackers.jpg);
     background-size: cover;
-    background position: left;
+    background-position: left;
 }
 .grid .photo3{
     height: 300px;
     background: url(../img/remakes.jpg);
     background-size: cover;
-    background position: left;
+    background-position: left;
 }
 .grid .photo4{
     height: 300px;
     background: url(../img/2023.jpg);
     background-size: cover;
-    background position: left;
+    background-position: left;
 }
 .grid .photo5{
     height: 400px;
     background: url(../img/mhr-mhrs.png);
     background-size: cover;
-    background position: left;
+    background-position: left;
 }
 .grid .photo6{
     height: 200px;
@@ -192,7 +192,7 @@ GRID CATEGORIAS
 CONTENIDO
 =============================================*/
 .contenidoInicio{
-    transform: translate(0%,-2%);
+    /*transform: translate(0%,-2%);*/
 }
 .introArticulo{
     position: relative;
@@ -217,6 +217,77 @@ CONTENIDO
 }
 .page-link{
     color: #06283D;
+}
+/*===============================
+GRIDFOOTER CATEGORIAS
+================================*/
+/*.gridFooter{
+    height: 300px;
+    overflow: hidden;
+}*/
+
+.gridFooter figure{
+    position: relative;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    cursor: pointer;
+    transition:1s all;
+}
+
+.gridFooter .columna1{
+    width: 40%;
+}
+
+.gridFooter .photo1{
+    height: 200px;
+    background: url(../img/edgerunners.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.gridFooter .photo2{
+    height: 100px;
+    background: url(../img/soulhackers.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.gridFooter .photo3{
+    height: 100px;
+    background: url(../img/remakes.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.gridFooter .photo4{
+    height: 100px;
+    background: url(../img/2023.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.gridFooter .photo5{
+    height: 200px;
+    background: url(../img/mhr-mhrs.png);
+    background-size: cover;
+    background-position: left;
+}
+
+.gridFooter figure p{
+    position: absolute;
+    left: 0px;
+    bottom: -16px;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.gridFooter figure p:hover{
+    background: rgba(231, 169, 55, 0.9);
 }
 /*=============================================
 TABLET HORIZONTAL (LG revisamos en 1024px)
