@@ -225,6 +225,9 @@ GRIDFOOTER CATEGORIAS
     height: 300px;
     overflow: hidden;
 }*/
+footer{
+    background: rgba(0, 0, 0, 1.0);
+}
 
 .gridFooter figure{
     position: relative;
@@ -234,6 +237,9 @@ GRIDFOOTER CATEGORIAS
     border-right: 4px solid white;
     cursor: pointer;
     transition:1s all;
+}
+.gridFooter figure p:hover{
+    background: rgba(231, 169, 55, 0.9);
 }
 
 .gridFooter .columna1{
@@ -353,6 +359,16 @@ TABLET VERTICAL (MD revisamos en 768px)
 
     .grid figure p{
         font-size: 18px;
+    }
+    .gridFooter figure{
+    border-top: 2px;
+    border-bottom: 2px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    }
+
+    .gridFooter figure p{
+        font-size: 12px;
     }
 }
 /*=============================================
