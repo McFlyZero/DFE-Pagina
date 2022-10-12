@@ -33,6 +33,15 @@
 
   <script src="js/plugins/jquery.jdSlider-latest.js"></script>
   <script src="js/plugins/pagination.min.js"></script>
+
+  <!-- Scrollorama -->
+  <script src="js/plugins/jquery.superscrollorama.js"></script>
+  <script src="js/plugins/TweenMax.min.js"></script>
+
+  <!-- Scrollup -->
+  <script src="js/plugins/scrollUP.js"></script>
+  <script src="js/plugins/jquery.easing.js"></script>
+
 </head>
 <!-- ENCABEZADO -->
 <header class="container-fluid">
@@ -90,9 +99,8 @@
       <div class="col-2 col-sm-1 col-md-2 col-lg-2 d-flex justify-content-end pt-2 mt-1">
 
         <!-- Buscador -->
-        <div class="d-none d-md-block m-0 mt-sm-1 mt-md-1 mt-lg-1 pr-0 pr-sm-2 pr-md-3 pr-lg-4 pt-2">
-          <!-- <i class="fa-solid fa-magnifying-glass lead text-white"></i> -->
-          <i class="fa-solid fa-search lead text-white"></i>
+        <div class="d-none d-md-block pr-4 pr-lg-5 mt-1">
+          <i class="fa-solid fa-search lead text-white" data-toggle="collapse" data-target="#buscador"></i>
         </div>
 
         <!-- Menu -->
@@ -101,6 +109,18 @@
       </div>
 
        </div>
+
+       <!-- ENTRADA DEL BUCADOR -->
+        <div id="buscador" class="collapse col-12">
+          <div class="input-group float-right w-50 pl-xl-5 pb-3">
+            <input type="text" class="form-control" placeholder="Buscar">
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="fa-solid fa-search"></i>
+              </span>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 
