@@ -25,11 +25,11 @@ $(window).scroll(function() {
 	if (posY > alturaBanner){
 		$("header").css({"background":"white"})
 		$("header .logotipo").css({"filter":"invert(100%)"})
-		$(".fa-bars, .fa-magnifying-glass").css({"filter":"invert(100%)"})
+		$(".fa-bars, .fa-search").css({"filter":"invert(100%)"})
 	}else{
 		$("header").css({"background":"rgba(0,0,0,.5)"})
 		$("header .logotipo").css({"filter":"invert(0%)"})
-		$(".fa-bars, .fa-magnifying-glass").css({"filter":"invert(0%)"})
+		$(".fa-bars, .fa-search").css({"filter":"invert(0%)"})
 	}
 });
 
