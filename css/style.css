@@ -306,6 +306,54 @@ SCROLL UP
     height: 50px;
     background: url(../img/flecha.jpg);
 }
+/*==================================
+PRELOAD
+====================================*/
+#preload{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+}
+#porcentajeCarga{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: white;
+    top: 52%;
+    font-size: 20px;
+    font-weight: 100;
+}
+#lineaCarga{
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    top: 55%;
+    left: 20%;
+    right: 20%;
+    /*Cambiar al color de la pagina*/
+    background: #666;
+}
+#rellenoCarga{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    /*Cambiar al color de la pagina*/
+    background: #999;
+}
+#estadoCarga{
+    position: absolute;
+    background: url(../img/loader.gif);
+    background-position: center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+}
 /*=============================================
 TABLET HORIZONTAL (LG revisamos en 1024px)
 =============================================*/
