@@ -52,6 +52,16 @@ $(".grid figure").mouseover(function(){
 $(".grid figure").mouseout(function(){
 	$(this).css({"background-position":"left top"})
 })
+
+$(".grid figure").click(function(){
+	var vinculo = $(this).attr("vinculo");
+	window.location = vinculo;
+})
+
+$(".gridFooter figure").click(function(){
+	var vinculo = $(this).attr("vinculo");
+	window.location = vinculo;
+})
 /*=============================================
 PAGINACIÓN
 =============================================*/
@@ -113,20 +123,28 @@ function funcionForEach(item, index){
 
 	for (var i = 0; i < item.length; i++) {
 		
-		$(item[i]).ready(function(){
-
-			numCarga++;
-
-			incremento = Math.ceil(numCarga * valorPorcentaje);
-			$("#porcentajeCarga").html(incremento+"%");
-
-			$("#rellenoCarga").css({"width":incremento+"%"});
-
-			if(incremento >= 100){
-
-				$("#preload").delay(350).fadeOut("slow");
-				$("#body").delay(350).css({"overflow-y":"scroll"});
-			}
-		})
+		preload(i,item);
 	}
+}
+
+function preload(i, item) {
+setTimeout(function(){
+	$(item[i]).ready(function(){
+
+		numCarga++
+
+		incremento = Math.floor(numCarga * valorPorcentaje);
+
+		$("#porcentajeCarga").html(incremento+"%");
+
+		$("#rellenoCarga").css({"width":incremento+"%"})
+
+		if(incremento >= 100){
+
+			$("#preload").delay(350).fadeOut("slow");
+			$("body").delay(350).css({"overflow-y":"scroll"})
+		}
+	})
+
+	},i*100)
 }
