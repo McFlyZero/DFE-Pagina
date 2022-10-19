@@ -2,9 +2,7 @@
 =  ESCRITORIO (XL revisamos en 1366px en adelante)  =
 =====================================================*/
 *{
-    /*Cambiar el tipo de letra a Poppins*/
-    font-family: 'Poppins', light
-  /*font-family: 'Open Sans', sans-serif*/;
+    font-family: 'Poppins','Roboto Serif', light;
 } 
 ul,ol{
     list-style: none;
@@ -69,8 +67,12 @@ header .buscymenu ul li i{
     background: #FF9052;
 }
 
-.fa-search, .fa-bars{
+.fa-search{
     color: white;
+}
+.fa-bars{
+    color: white;
+    font-size: 25px;
 }
 .redesMovil{
     position: fixed;
@@ -91,10 +93,30 @@ BANNER
 }
 .bannerEstatico{
     background: rgba(0,0,0,0);
-    /*height: 200px;*/
 }
 .fade-slider {
-        height: 90px;
+    height: 90px;
+}
+.fade-slider-Banner{
+    height: 300px;
+}
+.textoBanner{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: white;
+}
+.textoBanner h1{
+    font-family: 'Roboto Serif', bold;
+    font-size: 50px;
+}
+.textoBanner h5{
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 18px;
 }
 /*=============================================
 MENU
@@ -365,8 +387,20 @@ TABLET HORIZONTAL (LG revisamos en 1024px)
         right: 15%;
         top: 70px;
     }
+    .fa-bars{
+        font-size: 25px;
+    }
     .fade-slider {
         height: 75px;
+    }
+    .fade-slider-Banner{
+    height: 250px;
+    }
+    .textoBanner h1{
+        font-size: 40px;
+    }
+    .textoBanner h5{
+        font-size: 17px;
     }
 }
 /*=============================================
@@ -386,8 +420,22 @@ TABLET VERTICAL (MD revisamos en 768px)
         height: 89px;
     }
 
+    .fade-slider-Banner{
+    height: 240px;
+    }
+
+    .textoBanner h1{
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    .textoBanner h5{
+        font-size: 16px;
+    }
+
     .fa-bars{
         font-size: 25px;
+        margin-top: 5px;
     }
     .fa-search{
         font-size: 20px;
