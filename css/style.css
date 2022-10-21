@@ -211,6 +211,27 @@ GRID CATEGORIAS
     font-size: 20px;
 }
 /*=============================================
+BREADCRUMB
+=============================================*/
+.breadcrumb-item+.breadcrumb-item::before{
+    position: relative;
+    background: url(../img/separador.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    /*Cambiar imagen de la flechita*/
+    content: url(../img/espacio.png);
+    width: 60px;
+    left: -10px;
+    line-height: 50px;
+}
+.breadcrumb-item.inicio{
+    position: relative;
+    top: 13px;
+}
+/*=============================================
 CONTENIDO
 =============================================*/
 .contenidoInicio{
@@ -477,6 +498,13 @@ TABLET VERTICAL (MD revisamos en 768px)
     .gridFooter figure p{
         font-size: 12px;
     }
+    .breadcrumb-item+.breadcrumb-item::before{
+        width: 40px;
+        background-size: contain;
+    }
+    .breadcrumb-item.inicio, .breadcrumb-item.active{
+        font-size: 13px;
+    }
 }
 /*=============================================
 MÓVIL HORIZONTAL (SM revisamos en 576px)
@@ -529,6 +557,15 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
 
     .grid figure p{
         font-size: 16px;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before{
+        width: 40px;
+        background-size: contain;
+    }
+
+    .breadcrumb-item.inicio, .breadcrumb-item.active{
+        font-size: 13px;
     }
 }
 /*=============================================
@@ -586,6 +623,16 @@ MÓVIL VERTICAL (revisamos en 320px)
     .grid figure p{
         font-size: 14px;
     }
+
+    .breadcrumb-item+.breadcrumb-item::before{
+        width: 40px;
+        background-size: contain;
+    }
+
+    .breadcrumb-item.inicio, .breadcrumb-item.active{
+        font-size: 13px;
+    }
+    
     .fecha{
         font-size: 12px;
         height: 32px;
