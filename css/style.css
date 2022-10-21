@@ -104,7 +104,7 @@ BANNER
     position: absolute;
     width: 50%;
     text-align: center;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, 0%);
     color: white;
@@ -281,6 +281,7 @@ footer{
     cursor: pointer;
     transition:1s all;
 }
+
 .gridFooter figure p:hover{
     background: rgba(231, 169, 55, 0.9);
 }
