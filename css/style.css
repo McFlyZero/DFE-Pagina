@@ -254,9 +254,6 @@ CONTENIDO
     height: 40px;
 }
 .fechaArticulo{
-    position: absolute;
-    top: -2px;
-    left: 30px;
     padding: 12px 32px;
     color: #aaa;
     font-size: 15px;
@@ -589,7 +586,7 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
         background-size: contain;
     }
 
-    .breadcrumb-item.inicio, .breadcrumb-item.active{
+    .breadcrumb-item.inicio,.breadcrumb-item, .breadcrumb-item.active{
         font-size: 13px;
     }
 
@@ -599,6 +596,15 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
         padding: 8px 13px;
         font-size: 13px;
         height: 40px;
+    }
+
+    .tituloArticulo{
+        font-size: 20px;
+    }
+
+    .btnCompartir .btn-group button, .btnCompartir .btn-group button span{
+        font-size: 14px;
+        padding: 6px;
     }
 }
 /*=============================================
@@ -665,6 +671,10 @@ MÓVIL VERTICAL (revisamos en 320px)
     .breadcrumb-item.inicio, .breadcrumb-item.active{
         font-size: 13px;
     }
+
+    .breadArticulo{
+        display: none;
+    }
     
     .fecha{
         font-size: 12px;
@@ -685,5 +695,10 @@ MÓVIL VERTICAL (revisamos en 320px)
 
     .textoArticulo{
         font-size: 14px;
+    }
+
+    .btnCompartir .btn-group button, .btnCompartir .btn-group button span{
+        font-size: 10px;
+        padding: 4px;
     }
 }
