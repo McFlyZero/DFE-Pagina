@@ -143,3 +143,19 @@ setTimeout(function(){
 
 	},i*100)
 }
+/*==============================================
+DESLIZADOR DE ARTÍCULOS
+==============================================*/
+$(".deslizadorArticulos").jdSlider({
+	wrap: ".slide-inner",
+	slideShow: 3,
+	slideToScroll: 3,
+	isLoop: true,
+	responsive: [{
+		viewSize: 320,
+		settings: {
+			slideShow: 1,
+			slideToScroll: 1
+		}
+	}]
+})
