@@ -606,6 +606,10 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
         font-size: 14px;
         padding: 6px;
     }
+    
+    .opiniones p{
+        font-size: 14px;
+    }
 }
 /*=============================================
 MÓVIL VERTICAL (revisamos en 320px)
@@ -700,5 +704,9 @@ MÓVIL VERTICAL (revisamos en 320px)
     .btnCompartir .btn-group button, .btnCompartir .btn-group button span{
         font-size: 10px;
         padding: 4px;
+    }
+    
+    .opiniones p{
+        font-size: 12px;
     }
 }
